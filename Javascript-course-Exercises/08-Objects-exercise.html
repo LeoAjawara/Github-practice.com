@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects Exercise</title>
+  </head>
+  <body>
+    <script>
+      /*const Amazon = {
+        product: 'basketball',
+        price: 2095
+      };
+      Amazon.price += 500;
+      Amazon['delivery-time'] = '3 days';
+      console.log(Amazon); */
+
+      function comparePrice(product1 = {
+        name: '',
+        price: 0
+      } , product2 =  {
+        name: '',
+        price: 0
+      }) {
+        if(product1.price > product2.price) {
+          console.log(product1);
+        } else if (product2.price > product1.price) {
+          console.log(product2);
+        } else if (product2.price === product1.price) {
+          console.log('Price is the same.');
+        }
+      }
+      const Item1 = {
+        name: 'basketball',
+        price: 800 
+      };
+
+      const Item2 = {
+        name: 'basketball',
+        price: 800
+      };
+
+      comparePrice(Item1, Item2);
+
+      function isSameProduct(product1 =  {
+        name: '',
+        price: 0
+      }, product2 =  {
+        name: '',
+        price: 0
+      }) {
+        if (product1.name === product2.name && product1.price === product2.price) {
+          console.log('true');
+        } else if (product1.name != product2.name && product1.price != product2.price){
+          console.log('false');
+        } 
+      }
+      isSameProduct(Item1, Item2);
+      console.log('HELLO'.toLowerCase());
+      console.log('hello'.repeat(3));
+    </script>
+  </body>
+</html>

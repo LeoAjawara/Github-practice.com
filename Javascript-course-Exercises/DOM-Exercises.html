@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+    <button>9a</button>
+    <button class="js-second-button">9b</button>
+    </p>
+
+    <p>
+      <button onclick="
+    document.querySelector('.js-coin-flip').innerHTML = 'You chose: heads';
+    ">heads</button>
+
+    <button onclick="
+    document.querySelector('.js-coin-flip').innerHTML = 'You chose: tails';
+    ">tails</button>
+
+    <p class="js-coin-flip"></p>
+    </p>
+    
+    <p>
+      <input class="js-name" placeholder="Name" onkeydown="handleOnKeyDown(event);">
+      <button onclick="
+      displayInputText();
+      ">Submit</button>
+      <p class="Name-display"></p>
+    </p>
+    
+    <script>
+      console.log(document.querySelector('button'));
+      console.log(document.querySelector('.js-second-button'). innerHTML = '9b done!');
+
+      function displayInputText() {
+        const text = document.querySelector('.js-name').value;
+      document.querySelector('.Name-display').innerHTML = `Your name is: ${text}`;
+      }
+
+      function handleOnKeyDown(event) {
+        if(event.key === 'Enter') {
+          displayInputText();
+        }
+      }
+
+      
+
+
+    </script>
+  </body>
+</html>

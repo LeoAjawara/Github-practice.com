@@ -1,0 +1,63 @@
+.music-button{
+  background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .toggled{
+    background-color: black;
+    color: white;
+  }
+
+  .tech-button {
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .tech{
+    background-color: black;
+    color: white;
+  }
+
+  .toggled-button{
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .is-toggled {
+    background-color: black;
+    color: white;
+  }
+
+  .toggle-button{
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .toggle{
+    background-color: black;
+    color: white;
+  }

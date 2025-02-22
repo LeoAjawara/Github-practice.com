@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Practice</title>
+    <!--<link rel="Stylesheet" href="Styles/10-html-css-js-Exercise.css"> -->
+    <style>
+      /*.music-button{
+  background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .toggled{
+    background-color: black;
+    color: white;
+  }
+
+  .tech-button {
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .tech{
+    background-color: black;
+    color: white;
+  }
+
+  .toggled-button{
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .is-toggled {
+    background-color: black;
+    color: white;
+  } */
+
+  .toggle-button{
+    background-color: rgba(230, 230, 230, 0.856);
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px; 
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+  }
+
+  .toggle{
+    background-color: black;
+    color: white;
+  }
+    </style>
+  </head>
+  <body>
+    <button style="
+      background-color: rgb(255, 216, 20);
+      color: black;
+      padding: 5px 30px;
+      margin-bottom: 50px;
+      border: none;
+      border-radius: 50px;
+      ">Add to Cart</button>
+    <div style="
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 50px;
+    ">
+      <button style="
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      ">Request now</button>
+      <button style="
+       background-color: rgb(230, 230, 230);
+      color: black;
+      font-weight: bold;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      ">Schedule for later</button>
+    </div>
+    <button class="js-button" style="
+           background-color: rgb(223, 174, 174);
+      color: black;
+      font-weight: bold;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 50px;
+      margin-right: 50px;"  
+
+      >Test</button> 
+
+    <button class="js-Game toggle-button" onClick="
+    toggleButton('.js-Game');
+    ">Gaming</button>
+
+      <button class="js-music toggle-button" onclick="
+      toggleButton('.js-music');
+      " >Music</button>
+
+      <button class="js-tech toggle-button" onclick="
+     toggleButton('.js-tech');
+      " >Tech</button>
+
+    <!--<script src="Scripts/10-html-css-js-Exercise.js"></script> -->
+    <script>
+      function toggleButton(className) {
+        const button = document.querySelector(className);
+          if(!button.classList.contains('toggle')) {
+            offPreviousButton();
+            button.classList.add('toggle');
+          } else {
+            button.classList.remove('toggle');
+          }     
+     }
+
+     const previousButton = document.querySelector('.toggle');
+     function offPreviousButton(previousButton) {
+      if(previousButton){
+        previousButton.classList.remove('toggle');
+      }
+     }
+       /*const button = document.querySelector('.js-tech');
+      if(!button.classList.contains('tech')) {
+        button.classList.add('tech');
+      } else {
+        button.classList.remove('tech');
+      }*/
+    </script>
+  </body>
+</html>
