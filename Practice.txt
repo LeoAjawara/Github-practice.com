@@ -1,0 +1,4 @@
+Github is a hosting platform where you can collaborate with others in your Git repositories.
+Git is an open source and free source control management, it is used to manage changes to files over time.
+Git is used to save and track changes to a file.
+
